@@ -1717,3 +1717,39 @@ body.travel-modal-open {
   fill: currentColor;
 }
 
+
+
+/* Ícones sociais — GitHub e LinkedIn */
+.social-contact-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-contact-link svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.github-contact-link {
+  color: #f2f4f7;
+}
+
+.github-contact-link:hover {
+  color: #ffffff;
+  border-color: #ffffff !important;
+  text-shadow: 0 0 14px rgba(255, 255, 255, .28);
+}
+
+.linkedin-contact-link {
+  color: #69b8ff;
+  border-color: #0a66c2 !important;
+}
+
+.linkedin-contact-link:hover {
+  color: #a9d6ff;
+  border-color: #69b8ff !important;
+  text-shadow: 0 0 14px rgba(10, 102, 194, .42);
+}
