@@ -1,51 +1,88 @@
-# Portfólio Paulo Rezende — Identidade Gamer
+# Portfólio Paulo Rezende — Code • Ride • Explore
 
-Landing page responsiva desenvolvida com **HTML, CSS e JavaScript**, com identidade visual inspirada em games, aventura e motociclismo.
+Portfólio pessoal responsivo desenvolvido com **HTML, CSS e JavaScript**, com identidade visual inspirada em tecnologia, games, aventura e motociclismo.
 
-## O que foi adicionado nesta versão
+## Projeto publicado
 
-- Seção de perfil com 4 áreas de atuação
-- Área interativa de habilidades inspirada no portfólio anterior, adaptada ao novo tema
-- Experiência com **MySQL, PostgreSQL e MongoDB**
-- Projeto **Line Vision** no lugar de TuboVision
-- Links externos para:
-  - Controle de Gastos
-  - Dashboard de Produção
-  - Code Quest
-  - Jogo do Número Secreto
-  - Pokedevs
-  - Currículo Web
-- Capas dos projetos usando prints reais enviados
-- Página interna para o projeto **Line Vision**
-- Formulário com integração ViaCEP
+- **Site:** https://essesoueu.vercel.app/
+- **GitHub:** https://github.com/pvrezende/Portfolio-identidade
+- **WhatsApp:** https://wa.me/5592984615708?text=Ol%C3%A1%2C%20Paulo!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA.
+- **LinkedIn:** https://www.linkedin.com/in/pvrezende
+
+## Funcionalidades
+
+- Perfil profissional com quatro áreas de atuação
+- Área interativa de habilidades
+- Projetos em destaque e arsenal de projetos
+- Páginas internas com informações detalhadas dos projetos
+- Capas produzidas com imagens reais dos sistemas
+- Área pessoal sobre games, cinema e viagens
+- Consumo da API ViaCEP no formulário
+- Formulário de contato com validações em JavaScript
+- Link direto e botão flutuante para contato pelo WhatsApp
+- Identidade gamer com animações e elementos mecânicos 3D
 - Layout responsivo para desktop, tablet e celular
+- Publicação automática pela Vercel integrada ao GitHub
 
-## Estrutura
+## Tecnologias
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `projects/line-vision.html`
-- `assets/images/`
+- HTML5
+- CSS3
+- JavaScript
+- ViaCEP
+- Git e GitHub
+- Vercel
 
-## Como executar
+## Estrutura principal
 
-Abra o arquivo `index.html` no navegador ou use a extensão **Live Server** no VS Code.
+```text
+portfolio-identidade/
+├── assets/
+│   └── images/
+├── projects/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
 
-## Git — fluxo solicitado pelo professor
+## Como executar localmente
+
+Abra o arquivo `index.html` diretamente no navegador ou utilize a extensão **Live Server** no VS Code.
+
+```text
+http://127.0.0.1:5500/
+```
+
+## Branches
+
+O repositório utiliza as branches solicitadas na atividade:
+
+- `main` — versão principal e publicada
+- `develop` — desenvolvimento e testes
+
+## Atualizar o GitHub
 
 ```bash
-git init
 git add .
-git commit -m "feat: portfolio com identidade gamer"
-git branch -M main
-git checkout -b develop
+git commit -m "feat: adiciona contato pelo WhatsApp"
+git push origin main
 ```
 
-Depois de criar um repositório no GitHub:
+A Vercel identifica o novo commit da branch `main` e inicia automaticamente um novo deploy.
 
-```bash
-git remote add origin URL_DO_REPOSITORIO
-git push -u origin main
-git push -u origin develop
+## Contato pelo WhatsApp
+
+O botão do WhatsApp abre uma conversa com a seguinte mensagem preenchida:
+
+> Olá, Paulo! Vi seu portfólio e gostaria de conversar com você.
+
+Número utilizado:
+
+```text
++55 92 98461-5708
 ```
+
+---
+
+Desenvolvido por **Paulo Rezende**.
