@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Line Vision de Paulo Rezende.">
+  <title>Line Vision | Paulo Rezende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    /* Ajustes exclusivos da página Line Vision */
+    .line-vision-intro {
+      display: block;
+    }
+
+    .line-vision-intro .detail-content {
+      width: 100%;
+      padding: clamp(32px, 5vw, 62px);
+      background:
+        radial-gradient(circle at 85% 20%, rgba(255, 42, 42, 0.12), transparent 28%),
+        linear-gradient(145deg, rgba(13, 17, 23, 0.98), rgba(8, 11, 16, 0.98));
+    }
+
+    .line-vision-intro .detail-content > p:not(.overline) {
+      max-width: 920px;
+      font-size: 1.05rem;
+    }
+
+    .line-vision-intro .detail-tags {
+      max-width: 920px;
+    }
+
+    .line-vision-summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .detail-gallery {
+      margin-top: 24px;
+    }
+
+    .screen-preview {
+      min-height: 360px;
+    }
+
+    .screen-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    @media (max-width: 980px) {
+      .line-vision-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .screen-preview {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body class="detail-body">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <main class="detail-page">
+    <a class="back-link" href="../index.html#projetos">← VOLTAR AO PORTFÓLIO</a>
+
+    <section class="detail-hero line-vision-intro reveal">
+      <div class="detail-content">
+        <p class="overline">CASE STUDY • INDUSTRIAL AI</p>
+        <h1>LINE <span>VISION</span></h1>
+
+        <p>
+          O Line Vision é um sistema voltado para inspeção industrial por visão
+          computacional, criado para acompanhar a produção em tempo real,
+          identificar peças, validar resultados e registrar evidências com apoio
+          de automação e interface operacional.
+        </p>
+
+        <div class="detail-tags" aria-label="Tecnologias utilizadas no projeto">
+          <span>PYTHON</span>
+          <span>OPENCV</span>
+          <span>ARDUINO</span>
+          <span>MYSQL</span>
+          <span>DASHBOARD</span>
+        </div>
+
+        <div class="detail-actions">
+          <a class="action primary" href="../index.html#contato">
+            SOLICITAR DEMONSTRAÇÃO <span>↗</span>
+          </a>
+          <a
+            class="action ghost"
+            href="https://github.com/pvrezende/Line-Vision-IA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VER CÓDIGO NO GITHUB <span>↗</span>
+          </a>
+          <a class="action ghost" href="../index.html#extras">
+            VER OUTROS PROJETOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="line-vision-summary reveal">
+      <article class="detail-block">
+        <h2>OBJETIVO</h2>
+        <ul>
+          <li>Inspecionar peças de forma automática com visão computacional.</li>
+          <li>Controlar reprovação e registrar resultados com precisão.</li>
+          <li>Integrar hardware e software em um fluxo industrial responsivo.</li>
+          <li>Exibir informações operacionais em uma interface clara e funcional.</li>
+        </ul>
+      </article>
+
+      <article class="detail-block">
+        <h2>VISÃO GERAL</h2>
+        <p class="notice">
+          O projeto foi pensado para unir captura ao vivo, área de inspeção,
+          monitoramento de status, estatísticas operacionais e dashboard de
+          acompanhamento, oferecendo uma solução completa para o ambiente industrial.
+        </p>
+      </article>
+    </section>
+
+    <section class="detail-gallery reveal">
+      <h2>TELAS DO PROJETO</h2>
+
+      <div class="screen-showcase">
+        <article class="screen-card">
+          <div class="screen-preview">
+            <img
+              src="../assets/images/line-vision-screen.png"
+              alt="Tela principal do sistema Line Vision"
+            >
+          </div>
+
+          <div class="screen-copy">
+            <p class="overline">TELA 01</p>
+            <h3>TELA PRINCIPAL DE INSPEÇÃO</h3>
+
+            <p>
+              Esta é a interface principal do Line Vision. Nela o operador acompanha
+              a câmera ao vivo, a ROI de inspeção, o modelo ativo, o status da linha,
+              a resolução, o FPS e os painéis de resultado com estatísticas em tempo real.
+            </p>
+
+            <p>
+              A tela foi desenvolvida para facilitar a operação no chão de fábrica,
+              deixando a visualização da peça e os indicadores críticos sempre
+              acessíveis para uma tomada de decisão rápida.
+            </p>
+          </div>
+        </article>
+
+        <article class="screen-card">
+          <div class="screen-preview">
+            <img
+              src="../assets/images/line-vision-dashboard.png"
+              alt="Dashboard do Line Vision com indicadores consolidados"
+            >
+          </div>
+
+          <div class="screen-copy">
+            <p class="overline">TELA 02</p>
+            <h3>DASHBOARD DE MONITORAMENTO</h3>
+
+            <p>
+              O dashboard consolida os resultados de inspeção, exibindo OK Visão,
+              NG Visão, total testados, eficiência da inspeção e linhas ativas.
+              Também apresenta um gráfico de produtividade horária e a lista das
+              últimas inspeções realizadas.
+            </p>
+
+            <p>
+              Essa visão gerencial permite acompanhar o desempenho da operação em
+              tempo real, medir eficiência, verificar o histórico recente e apoiar
+              análises de produção com mais clareza.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

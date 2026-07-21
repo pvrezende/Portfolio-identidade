@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Dashboard de Produção de Paulo Rezende.">
+  <title>Dashboard de Produção | Paulo Rezende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .project-detail-intro {
+      display: block;
+    }
+
+    .project-detail-intro .detail-content {
+      width: 100%;
+      padding: clamp(32px, 5vw, 62px);
+      background:
+        radial-gradient(circle at 85% 20%, rgba(255, 42, 42, 0.12), transparent 28%),
+        linear-gradient(145deg, rgba(13, 17, 23, 0.98), rgba(8, 11, 16, 0.98));
+    }
+
+    .project-detail-intro .detail-content > p:not(.overline) {
+      max-width: 920px;
+      font-size: 1.05rem;
+    }
+
+    .project-summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .project-screen {
+      margin-top: 24px;
+    }
+
+    .project-screen-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .project-screen-preview,
+    .project-screen-copy {
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 24px;
+    }
+
+    .project-screen-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 420px;
+      background: #080b10;
+    }
+
+    .project-screen-preview img {
+      width: 100%;
+      height: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .project-screen-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-screen-copy h2 {
+      margin: 12px 0 18px;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+    }
+
+    .project-screen-copy p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .project-screen-copy p + p {
+      margin-top: 15px;
+    }
+
+    .access-project {
+      margin-top: 28px;
+      width: fit-content;
+    }
+
+    @media (max-width: 980px) {
+      .project-summary,
+      .project-screen-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .project-screen-preview {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .access-project {
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+<body class="detail-body">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <main class="detail-page">
+    <a class="back-link" href="../index.html#projetos">← VOLTAR AO PORTFÓLIO</a>
+
+    <section class="detail-hero project-detail-intro reveal">
+      <div class="detail-content">
+        <p class="overline">CASE STUDY • INDÚSTRIA 4.0</p>
+        <h1>DASHBOARD DE <span>PRODUÇÃO</span></h1>
+
+        <p>
+          O Dashboard de Produção é um sistema gerencial desenvolvido para
+          acompanhar indicadores industriais, metas e resultados operacionais.
+          A plataforma organiza dados da produção em uma interface visual,
+          facilitando o monitoramento e a tomada de decisão.
+        </p>
+
+        <div class="detail-tags" aria-label="Tecnologias utilizadas no projeto">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JAVASCRIPT</span>
+          <span>NODE.JS</span>
+          <span>MYSQL</span>
+          <span>AWS</span>
+        </div>
+
+        <div class="detail-actions">
+          <a
+            class="action primary"
+            href="http://34.236.15.197:3000/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ACESSAR DASHBOARD <span>↗</span>
+          </a>
+          <a
+            class="action ghost"
+            href="https://github.com/pvrezende/dashboard-producao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VER CÓDIGO NO GITHUB <span>↗</span>
+          </a>
+
+          <a class="action ghost" href="../index.html#extras">
+            VER OUTROS PROJETOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-summary reveal">
+      <article class="detail-block">
+        <h2>OBJETIVO</h2>
+        <ul>
+          <li>Acompanhar metas e resultados da produção em tempo real.</li>
+          <li>Exibir peças produzidas, aprovadas e reprovadas.</li>
+          <li>Apresentar indicadores de eficiência e produtividade.</li>
+          <li>Facilitar análises por período com filtros e relatórios.</li>
+        </ul>
+      </article>
+
+      <article class="detail-block">
+        <h2>VISÃO GERAL</h2>
+        <p class="notice">
+          A solução reúne front-end, back-end, banco de dados e infraestrutura
+          em nuvem. Os dados da operação são transformados em indicadores visuais,
+          permitindo que gestores acompanhem o processo produtivo com mais rapidez.
+        </p>
+      </article>
+    </section>
+
+    <section class="project-screen reveal">
+      <div class="project-screen-layout">
+        <div class="project-screen-preview">
+          <img
+            src="../assets/images/cover-dashboard-producao.png"
+            alt="Tela do Dashboard de Produção"
+          >
+        </div>
+
+        <article class="project-screen-copy">
+          <p class="overline">TELA DO PROJETO</p>
+          <h2>INDICADORES PARA TOMADA DE DECISÃO</h2>
+
+          <p>
+            A tela principal apresenta cartões com os principais números da produção,
+            gráficos de acompanhamento hora a hora, filtros, registros e ferramentas
+            para geração de relatórios.
+          </p>
+
+          <p>
+            Com essa estrutura, o usuário consegue identificar rapidamente o
+            desempenho do processo, comparar resultados e acompanhar possíveis
+            desvios durante a operação.
+          </p>
+
+          <a
+            class="action primary access-project"
+            href="http://34.236.15.197:3000/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ABRIR DASHBOARD DE PRODUÇÃO <span>↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

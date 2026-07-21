@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto LotePath — sistema de rastreamento de produção por lotes desenvolvido por Paulo Rezende no programa INDT.">
+  <title>LotePath | Paulo Rezende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .lotepath-intro { display:block; }
+    .lotepath-intro .detail-content {
+      width:100%;
+      padding:clamp(32px,5vw,62px);
+      background:radial-gradient(circle at 85% 20%,rgba(33,99,235,.16),transparent 30%),linear-gradient(145deg,rgba(13,17,23,.98),rgba(8,11,16,.98));
+    }
+    .lotepath-intro .detail-content>p:not(.overline){max-width:980px;font-size:1.05rem;}
+    .lotepath-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;}
+    .lotepath-section{margin-top:24px;padding:24px;border:1px solid var(--line);background:var(--card);}
+    .lotepath-section h2{font-size:clamp(2.4rem,4vw,3.8rem);margin-bottom:18px;}
+    .lotepath-section p{color:var(--muted);line-height:1.8;}
+    .feature-columns{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+    .feature-columns h3{font-size:2rem;margin-bottom:14px;color:#fff;}
+    .feature-columns ul,.detail-block ul{padding-left:20px;color:var(--muted);display:grid;gap:10px;line-height:1.65;}
+    .screen-showcase{display:grid;gap:28px;margin-top:18px;}
+    .screen-card{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;padding:20px;border:1px solid var(--line);background:rgba(255,255,255,.02);}
+    .screen-preview{background:#080b10;border:1px solid var(--line);padding:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .screen-preview img{width:100%;height:100%;max-height:580px;object-fit:contain;object-position:center;display:block;}
+    .screen-copy{display:flex;flex-direction:column;justify-content:center;}
+    .screen-copy h3{margin:10px 0 14px;font-size:clamp(2rem,3vw,3.1rem);}
+    .screen-copy p{color:var(--muted);line-height:1.8;}
+    .screen-copy p+p{margin-top:14px;}
+    @media(max-width:980px){.lotepath-grid,.feature-columns,.screen-card{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body class="detail-body">
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <main class="detail-page">
+    <a class="back-link" href="../index.html#projetos">← VOLTAR AO PORTFÓLIO</a>
+
+    <section class="detail-hero lotepath-intro reveal">
+      <div class="detail-content">
+        <p class="overline">CASE STUDY • PROGRAMA INDT</p>
+        <h1>LOTE<span>PATH</span></h1>
+        <p>O LotePath é um sistema web de rastreamento de produção por lotes, desenvolvido durante o curso de Desenvolvimento Full Stack do INDT. A solução centraliza abertura de lotes, vínculo de insumos, inspeção de qualidade, rastreabilidade e indicadores operacionais.</p>
+        <div class="detail-tags">
+          <span>ANGULAR</span><span>TYPESCRIPT</span><span>NODE.JS</span><span>EXPRESS</span><span>TYPEORM</span><span>POSTGRESQL</span><span>JWT</span><span>ZOD</span>
+        </div>
+        <div class="detail-actions">
+          <a
+            class="action ghost"
+            href="https://github.com/pvrezende/LotePath"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VER CÓDIGO NO GITHUB <span>↗</span>
+          </a><a class="action ghost" href="../index.html#projetos">VER OUTROS PROJETOS</a></div>
+      </div>
+    </section>
+
+    <section class="lotepath-grid reveal">
+      <article class="detail-block">
+        <h2>PROBLEMA</h2>
+        <p class="notice">Em ambientes industriais, informações sobre lotes, insumos, operadores e inspeções muitas vezes ficam distribuídas entre papéis, planilhas e consultas manuais. Isso torna auditorias, análises de não conformidade e recalls mais lentos e arriscados.</p>
+      </article>
+      <article class="detail-block">
+        <h2>SOLUÇÃO</h2>
+        <p class="notice">O LotePath organiza todo o fluxo em uma aplicação integrada, permitindo descobrir quais insumos foram utilizados, quem participou da operação e quais lotes podem ter sido afetados por um insumo suspeito.</p>
+      </article>
+    </section>
+
+    <section class="lotepath-section reveal">
+      <h2>FUNCIONALIDADES IMPLEMENTADAS</h2>
+      <div class="feature-columns">
+        <article><h3>BACK-END</h3><ul>
+          <li>Autenticação JWT, middleware e controle de acesso por perfil.</li><li>CRUD de produtos e abertura automática de lotes.</li><li>Listagem, detalhamento e atualização de status.</li><li>Vínculo e remoção de insumos por lote.</li><li>Registro de inspeção e rastreabilidade por lote ou insumo.</li><li>Dashboard, seed inicial e criação automática do banco.</li>
+        </ul></article>
+        <article><h3>FRONT-END</h3><ul>
+          <li>Login integrado ao back-end e armazenamento de sessão.</li><li>Rotas protegidas, guard e interceptores.</li><li>Dashboard com dados reais, indicadores e últimos lotes.</li><li>Telas de produtos, lotes, abertura e detalhes.</li><li>Badges, loading, mensagens de erro e empty states.</li><li>Navbar, footer e melhorias de responsividade.</li>
+        </ul></article>
+      </div>
+    </section>
+
+    <section class="detail-gallery reveal">
+      <h2>TELAS DO PROJETO</h2>
+      <div class="screen-showcase">
+        <article class="screen-card">
+          <div class="screen-preview"><img src="../assets/images/lotepath-login.png" alt="Tela de login do LotePath"></div>
+          <div class="screen-copy"><p class="overline">TELA 01</p><h3>LOGIN E CONTROLE DE ACESSO</h3><p>A tela de entrada apresenta o sistema, seus principais recursos e os perfis de teste. O login é integrado ao back-end por JWT, com proteção de rotas e controle de acesso conforme o perfil do usuário.</p><p>O design busca transmitir uma identidade corporativa, clara e adequada ao contexto industrial.</p></div>
+        </article>
+        <article class="screen-card">
+          <div class="screen-preview"><img src="../assets/images/lotepath-dashboard.png" alt="Dashboard de produção do LotePath"></div>
+          <div class="screen-copy"><p class="overline">TELA 02</p><h3>DASHBOARD DE PRODUÇÃO</h3><p>O dashboard apresenta filtros por período, lotes produzidos, unidades, taxa de aprovação e lotes pendentes. A navegação lateral centraliza produtos, lotes, insumos, inspeções, rastreabilidade, usuários e auditoria.</p><p>Os indicadores e estados vazios ajudam o usuário a compreender rapidamente a situação da operação e localizar informações importantes.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

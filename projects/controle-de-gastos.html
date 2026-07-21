@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Controle de Gastos de Paulo Rezende.">
+  <title>Controle de Gastos | Paulo Rezende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .project-detail-intro {
+      display: block;
+    }
+
+    .project-detail-intro .detail-content {
+      width: 100%;
+      padding: clamp(32px, 5vw, 62px);
+      background:
+        radial-gradient(circle at 85% 20%, rgba(255, 42, 42, 0.12), transparent 28%),
+        linear-gradient(145deg, rgba(13, 17, 23, 0.98), rgba(8, 11, 16, 0.98));
+    }
+
+    .project-detail-intro .detail-content > p:not(.overline) {
+      max-width: 920px;
+      font-size: 1.05rem;
+    }
+
+    .project-summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .project-screen {
+      margin-top: 24px;
+    }
+
+    .project-screen-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .project-screen-preview,
+    .project-screen-copy {
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 24px;
+    }
+
+    .project-screen-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 420px;
+      background: #080b10;
+    }
+
+    .project-screen-preview img {
+      width: 100%;
+      height: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .project-screen-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-screen-copy h2 {
+      margin: 12px 0 18px;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+    }
+
+    .project-screen-copy p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .project-screen-copy p + p {
+      margin-top: 15px;
+    }
+
+    .access-project {
+      margin-top: 28px;
+      width: fit-content;
+    }
+
+    @media (max-width: 980px) {
+      .project-summary,
+      .project-screen-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .project-screen-preview {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .access-project {
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+<body class="detail-body">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <main class="detail-page">
+    <a class="back-link" href="../index.html#projetos">← VOLTAR AO PORTFÓLIO</a>
+
+    <section class="detail-hero project-detail-intro reveal">
+      <div class="detail-content">
+        <p class="overline">CASE STUDY • FINANÇAS PESSOAIS</p>
+        <h1>CONTROLE DE <span>GASTOS</span></h1>
+
+        <p>
+          O Controle de Gastos é uma aplicação criada para ajudar na organização
+          financeira pessoal. O sistema reúne despesas, receitas, metas e
+          planejamento em uma interface centralizada, permitindo que o usuário
+          acompanhe melhor sua vida financeira e tome decisões com mais clareza.
+        </p>
+
+        <div class="detail-tags" aria-label="Tecnologias utilizadas no projeto">
+          <span>REACT NATIVE</span>
+          <span>NODE.JS</span>
+          <span>JWT</span>
+          <span>MYSQL</span>
+          <span>API REST</span>
+        </div>
+
+        <div class="detail-actions">
+          <a
+            class="action primary"
+            href="https://controle-de-gastos-app.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ACESSAR PROJETO <span>↗</span>
+          </a>
+          <a
+            class="action ghost"
+            href="https://github.com/pvrezende/controle-de-gastos-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VER CÓDIGO NO GITHUB <span>↗</span>
+          </a>
+
+          <a class="action ghost" href="../index.html#extras">
+            VER OUTROS PROJETOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-summary reveal">
+      <article class="detail-block">
+        <h2>OBJETIVO</h2>
+        <ul>
+          <li>Centralizar receitas, despesas e informações financeiras.</li>
+          <li>Ajudar o usuário a acompanhar metas e planejamento pessoal.</li>
+          <li>Facilitar a visualização da situação financeira atual.</li>
+          <li>Oferecer uma experiência simples, organizada e responsiva.</li>
+        </ul>
+      </article>
+
+      <article class="detail-block">
+        <h2>VISÃO GERAL</h2>
+        <p class="notice">
+          A aplicação combina uma interface moderna com back-end, autenticação e
+          persistência de dados. O projeto foi pensado para transformar informações
+          financeiras em dados fáceis de consultar e acompanhar no dia a dia.
+        </p>
+      </article>
+    </section>
+
+    <section class="project-screen reveal">
+      <div class="project-screen-layout">
+        <div class="project-screen-preview">
+          <img
+            src="../assets/images/cover-controle-gastos.png"
+            alt="Tela do projeto Controle de Gastos"
+          >
+        </div>
+
+        <article class="project-screen-copy">
+          <p class="overline">TELA DO PROJETO</p>
+          <h2>GESTÃO FINANCEIRA CENTRALIZADA</h2>
+
+          <p>
+            A interface foi desenvolvida para permitir acesso rápido às informações
+            financeiras e às principais ações do sistema. O visual escuro reforça a
+            identidade do projeto e mantém os elementos importantes em destaque.
+          </p>
+
+          <p>
+            O usuário pode acessar a aplicação publicada para conhecer a experiência,
+            navegar pelas funcionalidades disponíveis e visualizar o projeto funcionando.
+          </p>
+
+          <a
+            class="action primary access-project"
+            href="https://controle-de-gastos-app.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ABRIR CONTROLE DE GASTOS <span>↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

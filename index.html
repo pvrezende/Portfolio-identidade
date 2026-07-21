@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Paulo Rezende — desenvolvimento de software, tecnologia, aventura, games e motociclismo.">
+  <meta name="theme-color" content="#07090d">
+  <title>Paulo Rezende | Code • Ride • Explore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="topbar" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início">
+      <span class="brand-mark">PR</span>
+      <span class="brand-copy"><strong>PAULO REZENDE</strong><small>CODE • RIDE • EXPLORE</small></span>
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#sobre">01. Perfil</a>
+      <a href="#habilidades">02. Habilidades</a>
+      <a href="#projetos">03. Missões</a>
+      <a href="#extras">04. Arsenal</a>
+      <a href="#universo">05. Universo</a>
+      <a href="#contato">06. Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-bg" src="assets/images/paulo-moto-frente.png" alt="Paulo em sua moto em uma estrada ao pôr do sol">
+      <div class="hero-overlay"></div>
+      <div class="speed-lines" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="kicker"><span></span> DESENVOLVEDOR FULL STACK</p>
+        <h1>EU CRIO.<br><em>EU PILOTO.</em><br>EU EVOLUO.</h1>
+        <p class="hero-description">Tecnologia com identidade, estratégia e movimento. Transformo desafios reais em experiências digitais rápidas, úteis e marcantes.</p>
+        <div class="hero-actions">
+          <a class="action primary" href="#projetos">INICIAR MISSÃO <span>↗</span></a>
+          <a class="action ghost" href="#sobre">CONHECER PERFIL</a>
+        </div>
+      </div>
+
+      <div class="hero-hud" aria-label="Resumo profissional">
+        <div><span>CLASSE</span><strong>FULL STACK</strong></div>
+        <div><span>ESPECIALIDADE</span><strong>WEB • MOBILE • IA</strong></div>
+        <div><span>BASE</span><strong>MANAUS — AM</strong></div>
+      </div>
+
+      <a class="scroll-indicator" href="#sobre" aria-label="Rolar para a próxima seção"><span></span>SCROLL</a>
+    </section>
+
+    <section class="profile section" id="sobre">
+      <div class="section-number">01</div>
+      <div class="section-intro reveal">
+        <p class="overline">PLAYER PROFILE</p>
+        <h2>ENTRE CÓDIGO,<br>ESTRADA E <span>DESAFIOS.</span></h2>
+      </div>
+
+      <div class="profile-grid">
+        <div class="profile-photo reveal">
+          <img src="assets/images/paulo-perfil.jpeg" alt="Foto de perfil de Paulo Rezende">
+          <div class="photo-tag">PAULO<br><strong>REZENDE</strong></div>
+        </div>
+
+        <div class="profile-copy reveal">
+          <p class="lead">Sou desenvolvedor de software e estudante de Engenharia de Software. Gosto de construir soluções completas, da interface ao banco de dados, com foco em experiência, desempenho e resultado.</p>
+          <p>Minha identidade profissional nasce da mesma mentalidade que levo para a estrada e para os games: observar o cenário, escolher a estratégia, evoluir a cada tentativa e nunca parar no primeiro obstáculo.</p>
+
+          <div class="attributes">
+            <article><span>01</span><div><strong>FRONT-END</strong><small>HTML, CSS, JavaScript, React e Angular</small></div></article>
+            <article><span>02</span><div><strong>BACK-END</strong><small>Node.js, Python, Java, APIs REST e integrações</small></div></article>
+            <article><span>03</span><div><strong>MOBILE & IA</strong><small>React Native, OpenCV e visão computacional</small></div></article>
+            <article><span>04</span><div><strong>FULL STACK & BANCOS DE DADOS</strong><small>Experiência com MySQL, PostgreSQL e MongoDB</small></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section section" id="habilidades">
+      <div class="section-number">02</div>
+      <div class="skills-head reveal">
+        <div>
+          <p class="overline">TECH LOADOUT</p>
+          <h2>HABILIDADES<br><span>EM CAMPO.</span></h2>
+        </div>
+        <p>Selecione uma tecnologia para conhecer como aplico cada habilidade em projetos reais.</p>
+      </div>
+
+      <div class="skills-console reveal">
+        <div class="skill-grid" id="skillGrid" aria-label="Lista de habilidades">
+          <button class="skill-card active" type="button" data-name="HTML5" data-category="FRONT-END" data-description="Estruturo páginas semânticas, acessíveis e organizadas, criando uma base sólida para interfaces responsivas e bem indexadas." aria-pressed="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></button>
+          <button class="skill-card" type="button" data-name="CSS3" data-category="FRONT-END" data-description="Crio layouts responsivos com Flexbox, Grid, animações, variáveis e media queries, buscando acabamento visual profissional em qualquer tela." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></button>
+          <button class="skill-card" type="button" data-name="JavaScript" data-category="FRONT-END & LÓGICA" data-description="Desenvolvo interações, manipulação do DOM, validações, consumo de APIs e regras de negócio para aplicações dinâmicas." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></button>
+          <button class="skill-card" type="button" data-name="TypeScript" data-category="FRONT-END & BACK-END" data-description="Utilizo tipagem para produzir código mais seguro, previsível e fácil de manter em aplicações maiores." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></button>
+          <button class="skill-card" type="button" data-name="React" data-category="FRONT-END" data-description="Construo interfaces componentizadas, reutilizáveis e dinâmicas, facilitando manutenção, organização e evolução do projeto." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></button>
+          <button class="skill-card" type="button" data-name="Angular" data-category="FRONT-END" data-description="Desenvolvo aplicações web estruturadas com componentes, serviços, rotas e organização adequada para projetos de maior porte." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"><span>Angular</span></button>
+          <button class="skill-card" type="button" data-name="React Native" data-category="MOBILE" data-description="Crio aplicações mobile multiplataforma, trabalhando com navegação, interfaces responsivas e integração com APIs." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native"><span>React Native</span></button>
+          <button class="skill-card" type="button" data-name="Node.js" data-category="BACK-END" data-description="Desenvolvo APIs REST, regras de negócio, autenticação e integração com bancos de dados para aplicações completas." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></button>
+          <button class="skill-card" type="button" data-name="Python" data-category="BACK-END & IA" data-description="Utilizo Python em automações, APIs, processamento de dados e soluções de visão computacional aplicadas a problemas reais." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></button>
+          <button class="skill-card" type="button" data-name="Java" data-category="BACK-END" data-description="Aplico Java em projetos orientados a objetos e serviços back-end, com foco em organização, robustez e manutenção." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></button>
+          <button class="skill-card" type="button" data-name="MySQL" data-category="BANCO DE DADOS" data-description="Modelo e consulto bancos relacionais, trabalhando com tabelas, relacionamentos, filtros, relatórios e integração com aplicações." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></button>
+          <button class="skill-card" type="button" data-name="PostgreSQL" data-category="BANCO DE DADOS" data-description="Utilizo PostgreSQL em aplicações que exigem integridade, robustez e modelagem relacional bem estruturada." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></button>
+          <button class="skill-card" type="button" data-name="MongoDB" data-category="BANCO DE DADOS" data-description="Trabalho com dados orientados a documentos para cenários que pedem flexibilidade de estrutura e evolução rápida." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></button>
+          <button class="skill-card" type="button" data-name="Git" data-category="VERSIONAMENTO" data-description="Organizo o histórico de mudanças com branches, commits e fluxos de trabalho que aumentam a segurança e a rastreabilidade do desenvolvimento." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></button>
+          <button class="skill-card" type="button" data-name="GitHub" data-category="VERSIONAMENTO" data-description="Hospedo, documento e compartilho projetos, utilizando repositórios para colaboração, portfólio e controle de evolução." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></button>
+          <button class="skill-card" type="button" data-name="AWS" data-category="CLOUD" data-description="Tenho experiência com publicação e sustentação de aplicações em nuvem, incluindo EC2, bancos de dados e armazenamento." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"><span>AWS</span></button>
+          <button class="skill-card" type="button" data-name="Docker" data-category="INFRAESTRUTURA" data-description="Utilizo contêineres para padronizar ambientes, facilitar execução e organizar serviços de aplicações completas." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></button>
+          <button class="skill-card" type="button" data-name="OpenCV" data-category="VISÃO COMPUTACIONAL" data-description="Aplico captura, tratamento e análise de imagens em soluções industriais, integrando visão computacional e automação." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"><span>OpenCV</span></button>
+          <button class="skill-card" type="button" data-name="Figma" data-category="DESIGN & UI" data-description="Interpreto protótipos e layouts para transformar design em interfaces funcionais, respeitando hierarquia, identidade e espaçamentos." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></button>
+          <button class="skill-card" type="button" data-name="Nginx" data-category="INFRAESTRUTURA" data-description="Configuro proxy reverso e publicação de aplicações, organizando o acesso aos serviços e apoiando ambientes de produção." aria-pressed="false"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx"><span>Nginx</span></button>
+        </div>
+
+        <article class="skill-terminal" id="skillTerminal" aria-live="polite">
+          <div class="terminal-top"><span>SKILL DATABASE</span><b>ONLINE</b></div>
+          <div class="terminal-code">LOADOUT_01</div>
+          <p class="terminal-category" id="skillCategory">FRONT-END</p>
+          <h3 id="skillName">HTML5</h3>
+          <p id="skillDescription">Estruturo páginas semânticas, acessíveis e organizadas, criando uma base sólida para interfaces responsivas e bem indexadas.</p>
+          <div class="terminal-progress"><span></span></div>
+          <small>PASSE O MOUSE OU CLIQUE EM UMA HABILIDADE</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="missions section" id="projetos">
+      <div class="section-number">03</div>
+
+      <div class="missions-head reveal">
+        <div>
+          <p class="overline">SELECTED MISSIONS</p>
+          <h2>PROJETOS EM<br><span>DESTAQUE.</span></h2>
+        </div>
+
+        <p>Projetos construídos para resolver problemas reais usando tecnologia, automação e interfaces objetivas.</p>
+      </div>
+
+      <div class="project-grid-extended featured-project-grid">
+        <article class="project-showcase mission-card reveal" data-code="P-01">
+          <div class="project-copy">
+            <span class="project-index">P-01</span>
+            <span class="project-stack">VISÃO COMPUTACIONAL • AUTOMAÇÃO</span>
+            <h3>Line Vision</h3>
+            <p>Sistema industrial para inspeção de peças com Python, OpenCV, Arduino e dashboard para acompanhamento em tempo real.</p>
+            <div class="tech-line">PYTHON / OPENCV / ARDUINO / MYSQL</div>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/line-vision.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-01</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-line-vision.png" alt="Capa do projeto Line Vision">
+          </div>
+        </article>
+
+        <article class="project-showcase mission-card reveal" data-code="P-02">
+          <div class="project-copy">
+            <span class="project-index">P-02</span>
+            <span class="project-stack">MOBILE • FINANÇAS PESSOAIS</span>
+            <h3>Controle de Gastos</h3>
+            <p>Aplicação para organização financeira, metas, planejamento pessoal e acompanhamento das despesas com uma interface moderna.</p>
+            <div class="tech-line">REACT NATIVE / NODE.JS / JWT / MYSQL</div>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/controle-de-gastos.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-02</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-controle-gastos.png" alt="Capa do projeto Controle de Gastos">
+          </div>
+        </article>
+
+        <article class="project-showcase mission-card reveal" data-code="P-03">
+          <div class="project-copy">
+            <span class="project-index">P-03</span>
+            <span class="project-stack">DADOS • INDÚSTRIA 4.0</span>
+            <h3>Dashboard de Produção</h3>
+            <p>Painel gerencial com metas, indicadores, produção hora a hora, eficiência e relatórios para tomada de decisão.</p>
+            <div class="tech-line">HTML / CSS / JAVASCRIPT / NODE.JS</div>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/dashboard-producao.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-03</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-dashboard-producao.png" alt="Capa do projeto Dashboard de Produção">
+          </div>
+        </article>
+
+        <article class="project-showcase mission-card reveal" data-code="P-04">
+          <div class="project-copy">
+            <span class="project-index">P-04</span>
+            <span class="project-stack">FULL STACK • RASTREABILIDADE INDUSTRIAL</span>
+            <h3>LotePath</h3>
+            <p>Sistema web de rastreamento de produção por lotes, desenvolvido durante o curso de Desenvolvimento Full Stack do INDT, com controle produtivo, inspeção de qualidade, vínculo de insumos e apoio a cenários de recall.</p>
+            <div class="tech-line">ANGULAR / TYPESCRIPT / NODE.JS / EXPRESS / TYPEORM / POSTGRESQL / JWT</div>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/lotepath.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-04</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-lotepath.png" alt="Capa do projeto LotePath">
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="arsenal section" id="extras">
+      <div class="section-number">04</div>
+
+      <div class="arsenal-head reveal">
+        <div>
+          <p class="overline">EXPANSION PACK</p>
+          <h2>MAIS PROJETOS<br><span>NO MEU ARSENAL.</span></h2>
+        </div>
+
+        <p>Alguns projetos criados com foco em criatividade, interatividade, estilo visual e experiência de navegação.</p>
+      </div>
+
+      <div class="project-grid-extended">
+        <article class="project-showcase reveal" data-code="P-08">
+          <div class="project-copy">
+            <span class="project-index">P-08</span>
+            <span class="project-stack">HTML, CSS E JAVASCRIPT</span>
+            <h3>Projeto Code Quest</h3>
+            <p>Experiência em estilo RPG criada para unir programação e gamificação. O usuário escolhe uma classe, evolui no jogo e interage com uma proposta divertida de aprendizado.</p>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/code-quest.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-08</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-code-quest.png" alt="Capa do projeto Code Quest">
+          </div>
+        </article>
+
+        <article class="project-showcase reveal" data-code="P-08">
+          <div class="project-copy">
+            <span class="project-index">P-08</span>
+            <span class="project-stack">HTML, CSS E JAVASCRIPT</span>
+            <h3>Projeto Jogo do Número Secreto</h3>
+            <p>Projeto interativo com reconhecimento de voz em que o usuário tenta descobrir um número secreto, recebendo feedback a cada tentativa em uma interface gamer.</p>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/jogo-numero-secreto.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-08</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-numero-secreto.png" alt="Capa do projeto Jogo do Número Secreto">
+          </div>
+        </article>
+
+        <article class="project-showcase reveal" data-code="P-08">
+          <div class="project-copy">
+            <span class="project-index">P-08</span>
+            <span class="project-stack">HTML, CSS E JAVASCRIPT</span>
+            <h3>Projeto Pokedevs</h3>
+            <p>Página temática inspirada em criaturas fictícias, com foco em composição visual, personagens customizados e experiência lúdica para apresentação de conteúdo.</p>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/pokedevs.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-08</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-pokedevs.png" alt="Capa do projeto Pokedevs">
+          </div>
+        </article>
+
+        <article class="project-showcase reveal" data-code="P-08">
+          <div class="project-copy">
+            <span class="project-index">P-08</span>
+            <span class="project-stack">HTML, CSS E JAVASCRIPT</span>
+            <h3>Projeto Currículo Web</h3>
+            <p>Currículo digital responsivo com múltiplos perfis, alternância de tema, tradução e versão pronta para impressão em PDF com visual profissional.</p>
+            <div class="project-action-row">
+              <a class="action primary compact" href="projects/curriculo-web.html">VER PROJETO <span>↗</span></a>
+              <span class="project-ghost-index" aria-hidden="true">P-08</span>
+            </div>
+          </div>
+
+          <div class="project-cover">
+            <img src="assets/images/cover-curriculo-web.png" alt="Capa do projeto Currículo Web">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="universe section" id="universo">
+      <div class="section-number">05</div>
+      <div class="universe-title reveal">
+        <p class="overline">OFFLINE MODE</p>
+        <h2>MEU UNIVERSO<br><span>ALÉM DO CÓDIGO.</span></h2>
+      </div>
+
+      <div class="cinematic-grid">
+        <figure class="cinematic-card main-shot reveal">
+          <img src="assets/images/paulo-moto-lateral.png" alt="Paulo em sua motocicleta Yamaha R15">
+          <figcaption><small>PAIXÃO PRINCIPAL</small><strong>MOTOCICLISMO</strong><span>A estrada ensina foco, responsabilidade e liberdade.</span></figcaption>
+        </figure>
+
+        <div class="universe-panel reveal">
+          <div class="panel-title">LOADOUT PESSOAL</div>
+          <article class="universe-item games-trigger" id="gamesTrigger" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="gamesModal"><b>01</b><span>GAMES</span><small>Estratégia, competição, histórias e mundos inesquecíveis. <strong class="loadout-action">VER JOGOS ↗</strong></small></article>
+          <article class="universe-item cinema-trigger" id="cinemaTrigger" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="cinemaModal"><b>02</b><span>CINEMA</span><small>Grandes narrativas, ação, fantasia e ficção científica. <strong class="loadout-action">VER FILMES ↗</strong></small></article>
+          <article class="universe-item travel-trigger" id="travelTrigger" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="travelModal"><b>03</b><span>VIAGENS</span><small>Novos caminhos, culturas, paisagens e experiências. <strong class="loadout-action">VER DESTINOS ↗</strong></small></article>
+          <article><b>04</b><span>FUTEBOL</span><small>Paixão, disputa e emoção dentro e fora dos games.</small></article>
+        </div>
+      </div>
+
+      <div class="quote-strip reveal"><span>“</span> TODA GRANDE JORNADA COMEÇA COM A CORAGEM DE SAIR DO LUGAR. <span>”</span></div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div class="section-number">06</div>
+      <div class="contact-shell">
+        <div class="contact-copy reveal">
+          <p class="overline">START A NEW MISSION</p>
+          <h2>VAMOS CRIAR<br>ALGO <span>MEMORÁVEL?</span></h2>
+          <p>Preencha o formulário para iniciar uma conversa. O campo de CEP demonstra o consumo da API ViaCEP exigido na atividade.</p>
+          <div class="social-links">
+            <a href="https://github.com/pvrezende" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+            <a href="https://www.linkedin.com/in/pvrezende" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-header"><span>CONTACT TERMINAL</span><b>ONLINE</b></div>
+          <label>NOME<input type="text" id="name" placeholder="Digite seu nome" required></label>
+          <label>E-MAIL<input type="email" id="email" placeholder="voce@email.com" required></label>
+          <div class="form-row">
+            <label>CEP<input type="text" id="cep" maxlength="9" inputmode="numeric" placeholder="00000-000"></label>
+            <label>CIDADE<input type="text" id="city" placeholder="Cidade" readonly></label>
+          </div>
+          <label>MENSAGEM<textarea id="message" rows="5" placeholder="Conte sobre sua ideia ou oportunidade" required></textarea></label>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <button class="action primary full" type="submit">ENVIAR TRANSMISSÃO <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+    <div class="games-modal" id="gamesModal" aria-hidden="true">
+      <div class="games-modal-backdrop" data-close-games></div>
+
+      <section
+        class="games-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gamesModalTitle"
+      >
+        <button
+          class="games-modal-close"
+          id="gamesModalClose"
+          type="button"
+          aria-label="Fechar lista de jogos"
+        >
+          ×
+        </button>
+
+        <header class="games-modal-header">
+          <p class="overline">PLAYER LIBRARY</p>
+          <h2 id="gamesModalTitle">JOGOS QUE<br><span>FAZEM PARTE DA JORNADA.</span></h2>
+          <p>Alguns dos universos que mais gosto de explorar, competir e revisitar nas horas livres.</p>
+        </header>
+
+        <div class="favorite-games-grid">
+          <article class="favorite-game-card game-ocarina">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Legend%20of%20Zelda%20Ocarina%20of%20Time.svg"
+                alt="Logo de ZELDA: OCARINA OF TIME"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">ZELDA: OCARINA OF TIME</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Aventura • Exploração</span>
+              <h3>ZELDA: OCARINA OF TIME</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-botw">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Legend%20of%20Zelda%20Breath%20of%20the%20Wild.svg"
+                alt="Logo de ZELDA: BREATH OF THE WILD"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">ZELDA: BREATH OF THE WILD</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Aventura • Mundo aberto</span>
+              <h3>ZELDA: BREATH OF THE WILD</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-mario-bros">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Super%20Mario%20Bros.%20logo.png"
+                alt="Logo de SUPER MARIO BROS."
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">SUPER MARIO BROS.</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Plataforma • Clássico</span>
+              <h3>SUPER MARIO BROS.</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-mario-3d">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Super%20Mario%203D%20Land%20logo.svg"
+                alt="Logo de SUPER MARIO 3D LAND"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">SUPER MARIO 3D LAND</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Plataforma • Aventura 3D</span>
+              <h3>SUPER MARIO 3D LAND</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-fc">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/FC%2026%20Logo.svg"
+                alt="Logo de EA SPORTS FC 26"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">EA SPORTS FC 26</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Futebol • Competição</span>
+              <h3>EA SPORTS FC 26</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-gran-turismo">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Gran%20Turismo%207%20logo.svg"
+                alt="Logo de GRAN TURISMO"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">GRAN TURISMO</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Corrida • Simulação</span>
+              <h3>GRAN TURISMO</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-gta">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Theft%20Auto%20logo%20series.svg"
+                alt="Logo de GTA V"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">GTA V</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Mundo aberto • Ação</span>
+              <h3>GTA V</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-valorant">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Valorant%20logo.svg"
+                alt="Logo de VALORANT"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">VALORANT</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>FPS tático • Competitivo</span>
+              <h3>VALORANT</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-forza">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Forza%20Horizon%20logo.svg"
+                alt="Logo de FORZA HORIZON"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">FORZA HORIZON</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Corrida • Mundo aberto</span>
+              <h3>FORZA HORIZON</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-guitar">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Guitar%20hero%20new%20logo.svg"
+                alt="Logo de GUITAR HERO"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">GUITAR HERO</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Música • Ritmo</span>
+              <h3>GUITAR HERO</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-call-of-duty">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Call%20of%20Duty%20logo.svg"
+                alt="Logo de CALL OF DUTY"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">CALL OF DUTY</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>FPS • Ação militar</span>
+              <h3>CALL OF DUTY</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-battlefield">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/BattlefieldLogo.svg"
+                alt="Logo de BATTLEFIELD"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">BATTLEFIELD</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>FPS • Guerra em grande escala</span>
+              <h3>BATTLEFIELD</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-fortnite">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/FortniteLogo.svg"
+                alt="Logo de FORTNITE"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">FORTNITE</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Battle Royale • Construção</span>
+              <h3>FORTNITE</h3>
+            </div>
+          </article>
+          <article class="favorite-game-card game-tony-hawk">
+            <div class="favorite-game-art">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Tony%20Hawk%27s%20Pro%20Skater%20-%20logo.png"
+                alt="Logo de TONY HAWK'S PRO SKATER"
+                loading="lazy"
+                onerror="this.closest('.favorite-game-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-game-fallback">TONY HAWK'S PRO SKATER</span>
+            </div>
+            <div class="favorite-game-info">
+              <span>Skate • Esporte</span>
+              <h3>TONY HAWK'S PRO SKATER</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="cinema-modal" id="cinemaModal" aria-hidden="true">
+      <div class="cinema-modal-backdrop" data-close-cinema></div>
+
+      <section
+        class="cinema-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cinemaModalTitle"
+      >
+        <button
+          class="cinema-modal-close"
+          id="cinemaModalClose"
+          type="button"
+          aria-label="Fechar lista de filmes"
+        >
+          ×
+        </button>
+
+        <header class="cinema-modal-header">
+          <p class="overline">CINEMA LIBRARY</p>
+          <h2 id="cinemaModalTitle">FILMES QUE<br><span>MARCARAM MINHA JORNADA.</span></h2>
+          <p>Algumas franquias e histórias que gosto de assistir e revisitar.</p>
+        </header>
+
+        <div class="favorite-movies-grid">
+          <article class="favorite-movie-card movie-premonicao">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/lXZRf4HLXvJBoB11GOlDFc6akwc.jpg"
+                alt="Imagem de PREMONIÇÃO"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">PREMONIÇÃO</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Terror • Suspense</span>
+              <h3>PREMONIÇÃO</h3>
+              <p>Todos os filmes da franquia</p>
+            </div>
+          </article>
+          <article class="favorite-movie-card movie-gente-grande">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/r1mDA1SLjw2yiYhhLiAjrd2Pt1l.jpg"
+                alt="Imagem de GENTE GRANDE"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">GENTE GRANDE</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Comédia</span>
+              <h3>GENTE GRANDE</h3>
+              <p>Gente Grande 1 e 2</p>
+            </div>
+          </article>
+          <article class="favorite-movie-card movie-hobbit">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg"
+                alt="Imagem de O HOBBIT"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">O HOBBIT</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Fantasia • Aventura</span>
+              <h3>O HOBBIT</h3>
+              <p>A trilogia completa</p>
+            </div>
+          </article>
+          <article class="favorite-movie-card movie-lotr">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/tlvsNCwWEIgwAM23aNzTmMIcPEZ.jpg"
+                alt="Imagem de O SENHOR DOS ANÉIS"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">O SENHOR DOS ANÉIS</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Fantasia • Aventura</span>
+              <h3>O SENHOR DOS ANÉIS</h3>
+              <p>A trilogia completa</p>
+            </div>
+          </article>
+          <article class="favorite-movie-card movie-dolittle">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/tLrchGMIkdo1KamQJA6fwvDQEy0.jpg"
+                alt="Imagem de DR. DOLITTLE"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">DR. DOLITTLE</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Comédia • Família</span>
+              <h3>DR. DOLITTLE</h3>
+              <p>As aventuras do médico dos animais</p>
+            </div>
+          </article>
+          <article class="favorite-movie-card movie-happiness">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/6NExTydAGWbtv6Gyt2cNfcmjhby.jpg"
+                alt="Imagem de À PROCURA DA FELICIDADE"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">À PROCURA DA FELICIDADE</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Drama • Biografia</span>
+              <h3>À PROCURA DA FELICIDADE</h3>
+              <p>Uma história de persistência e superação</p>
+            </div>
+          </article>
+          <article class="favorite-movie-card movie-fast">
+            <div class="favorite-movie-art">
+              <img
+                src="https://image.tmdb.org/t/p/w500/bj2y7PABBBzrI1POZFtqPwYJA4m.jpg"
+                alt="Imagem de VELOZES E FURIOSOS"
+                loading="lazy"
+                onerror="this.closest('.favorite-movie-art').classList.add('image-error'); this.style.display='none';"
+              >
+              <span class="favorite-movie-fallback">VELOZES E FURIOSOS</span>
+            </div>
+            <div class="favorite-movie-info">
+              <span>Ação • Corrida</span>
+              <h3>VELOZES E FURIOSOS</h3>
+              <p>A franquia completa</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="travel-modal" id="travelModal" aria-hidden="true">
+      <div class="travel-modal-backdrop" data-close-travel></div>
+
+      <section
+        class="travel-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="travelModalTitle"
+      >
+        <button
+          class="travel-modal-close"
+          id="travelModalClose"
+          type="button"
+          aria-label="Fechar destinos de viagem"
+        >
+          ×
+        </button>
+
+        <header class="travel-modal-header">
+          <p class="overline">TRAVEL LOG</p>
+          <h2 id="travelModalTitle">LUGARES QUE<br><span>FAZEM PARTE DA ROTA.</span></h2>
+          <p>Destinos que já conheci e lugares que ainda quero transformar em novas histórias.</p>
+        </header>
+
+        <section class="travel-group">
+          <div class="travel-group-heading">
+            <div>
+              <span class="travel-group-code">ROTA 01</span>
+              <h3>DESTINOS QUE JÁ CONHEÇO</h3>
+            </div>
+            <strong>10 lugares visitados</strong>
+          </div>
+
+          <div class="travel-grid">
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de São Paulo"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="São_Paulo"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>SP • Brasil</span>
+                <h3>São Paulo</h3>
+                <p>metrópole, cultura e oportunidades</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Rio de Janeiro"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Rio_de_Janeiro"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>RJ • Brasil</span>
+                <h3>Rio de Janeiro</h3>
+                <p>praias, paisagens e energia</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Fortaleza"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Fortaleza"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>CE • Brasil</span>
+                <h3>Fortaleza</h3>
+                <p>mar, calor e experiências</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Natal"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Natal_(Rio_Grande_do_Norte)"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>RN • Brasil</span>
+                <h3>Natal</h3>
+                <p>dunas, praias e tranquilidade</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Manaus"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Manaus"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>AM • Brasil</span>
+                <h3>Manaus</h3>
+                <p>minha base, Amazônia e identidade</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Boa Vista"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Boa_Vista_(Roraima)"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>RR • Brasil</span>
+                <h3>Boa Vista</h3>
+                <p>novos caminhos pelo Norte</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Maceió"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Maceió"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>AL • Brasil</span>
+                <h3>Maceió</h3>
+                <p>águas claras e litoral</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Porto de Galinhas"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Porto_de_Galinhas"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>PE • Brasil</span>
+                <h3>Porto de Galinhas</h3>
+                <p>piscinas naturais e descanso</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Venezuela"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Venezuela"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>Internacional</span>
+                <h3>Venezuela</h3>
+                <p>cultura, estrada e novas paisagens</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-visited">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Ilha de Margarita"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Ilha_de_Margarita"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >VISITADO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>Venezuela</span>
+                <h3>Ilha de Margarita</h3>
+                <p>ilha, mar e aventura</p>
+              </div>
+            </article>
+          
+          </div>
+        </section>
+
+        <section class="travel-group travel-dream-group">
+          <div class="travel-group-heading">
+            <div>
+              <span class="travel-group-code">ROTA 02</span>
+              <h3>DESTINOS DOS MEUS SONHOS</h3>
+            </div>
+            <strong>09 próximas missões</strong>
+          </div>
+
+          <div class="travel-grid">
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Ushuaia"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Ushuaia"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>Argentina</span>
+                <h3>Ushuaia</h3>
+                <p>o fim do mundo e paisagens geladas</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Florianópolis"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Florianópolis"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>SC • Brasil</span>
+                <h3>Florianópolis</h3>
+                <p>qualidade de vida, praias e tecnologia</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Suíça"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Suíça"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>Europa</span>
+                <h3>Suíça</h3>
+                <p>montanhas, neve e cidades organizadas</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Peru"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Peru"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>América do Sul</span>
+                <h3>Peru</h3>
+                <p>história, cultura e Machu Picchu</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Portugal"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Portugal"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>Europa</span>
+                <h3>Portugal</h3>
+                <p>história, cultura e conexão com a Europa</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Estados Unidos"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Estados_Unidos"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>América do Norte</span>
+                <h3>Estados Unidos</h3>
+                <p>tecnologia, grandes cidades e experiências</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Fernando de Noronha"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Fernando_de_Noronha"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>PE • Brasil</span>
+                <h3>Fernando de Noronha</h3>
+                <p>natureza preservada e mar</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Havaí"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Havaí"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>Estados Unidos</span>
+                <h3>Havaí</h3>
+                <p>ilhas, praias e aventura</p>
+              </div>
+            </article>
+
+            <article class="travel-card travel-dream">
+              <div style="position: relative; margin: -22px -22px 16px;">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 900 600%22%3E%3Crect width=%22900%22 height=%22600%22 fill=%22%23111720%22/%3E%3C/svg%3E"
+                  alt="Imagem de Punta Cana"
+                  loading="lazy"
+                  data-wiki-lang="pt"
+                  data-wiki-title="Punta_Cana"
+                  style="width: 100%; height: 145px; object-fit: cover; display: block; border-bottom: 1px solid rgba(255,255,255,.08);"
+                />
+                <span
+                  class="travel-status"
+                  style="position: absolute; top: 14px; right: 14px; background: rgba(8,12,18,.82); backdrop-filter: blur(6px);"
+                >PRÓXIMA MISSÃO</span>
+              </div>
+              <div class="travel-card-copy">
+                <span>República Dominicana</span>
+                <h3>Punta Cana</h3>
+                <p>Caribe, descanso e paisagens</p>
+              </div>
+            </article>
+          
+          </div>
+        </section>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <span>© <b id="year"></b> PAULO REZENDE</span>
+    <span>DESENVOLVIDO COM HTML • CSS • JAVASCRIPT</span>
+    <a href="#inicio">VOLTAR AO TOPO ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
