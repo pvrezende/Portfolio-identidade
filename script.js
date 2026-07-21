@@ -69,11 +69,19 @@ if (cepInput && cityInput && formStatus) {
 }
 
 if (form && formStatus) {
-  form.addEventListener('submit', event => {
+  const submitButton = document.querySelector('#contactSubmitButton');
+  const submitLabel = submitButton?.querySelector('.submit-label');
+
+  form.addEventListener('submit', async event => {
     event.preventDefault();
-    const name = document.querySelector('#name').value.trim();
-    const email = document.querySelector('#email').value.trim();
-    const message = document.querySelector('#message').value.trim();
+
+    const nameInput = document.querySelector('#name');
+    const emailInput = document.querySelector('#email');
+    const messageInput = document.querySelector('#message');
+
+    const name = nameInput?.value.trim() || '';
+    const email = emailInput?.value.trim() || '';
+    const message = messageInput?.value.trim() || '';
 
     if (!name || !email || !message) {
       formStatus.textContent = 'PREENCHA NOME, E-MAIL E MENSAGEM.';
@@ -81,10 +89,54 @@ if (form && formStatus) {
       return;
     }
 
-    formStatus.textContent = `TRANSMISSÃO RECEBIDA, ${name.toUpperCase()}. OBRIGADO PELO CONTATO!`;
-    formStatus.className = 'form-status success';
-    form.reset();
-    if (cityInput) cityInput.value = '';
+    if (!emailInput.checkValidity()) {
+      formStatus.textContent = 'DIGITE UM E-MAIL VÁLIDO.';
+      formStatus.className = 'form-status error';
+      emailInput.focus();
+      return;
+    }
+
+    const originalLabel = submitLabel?.textContent || 'ENVIAR TRANSMISSÃO';
+
+    if (submitButton) submitButton.disabled = true;
+    if (submitLabel) submitLabel.textContent = 'ENVIANDO...';
+
+    formStatus.textContent = 'ESTABELECENDO CONEXÃO E ENVIANDO MENSAGEM...';
+    formStatus.className = 'form-status';
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch('https://formsubmit.co/ajax/pvrezende2023@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || result.success === false) {
+        throw new Error(result.message || 'Falha no envio da mensagem.');
+      }
+
+      formStatus.textContent =
+        `TRANSMISSÃO ENVIADA, ${name.toUpperCase()}! RESPONDEREI PELO E-MAIL INFORMADO.`;
+      formStatus.className = 'form-status success';
+
+      form.reset();
+      if (cityInput) cityInput.value = '';
+    } catch (error) {
+      console.error('Erro ao enviar formulário:', error);
+
+      formStatus.textContent =
+        'NÃO FOI POSSÍVEL ENVIAR AGORA. TENTE NOVAMENTE OU USE O WHATSAPP.';
+      formStatus.className = 'form-status error';
+    } finally {
+      if (submitButton) submitButton.disabled = false;
+      if (submitLabel) submitLabel.textContent = originalLabel;
+    }
   });
 }
 
